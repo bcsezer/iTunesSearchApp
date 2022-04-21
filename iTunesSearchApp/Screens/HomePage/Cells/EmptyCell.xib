@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmptyCell" customModule="RedditPhotoGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dye-eQ-ts0">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S57-oZ-RSp">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S57-oZ-RSp" secondAttribute="height" multiplier="1:1" id="cS3-HJ-pTq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="S57-oZ-RSp" secondAttribute="bottom" id="E96-Nu-MkY"/>
+                            <constraint firstAttribute="trailing" secondItem="S57-oZ-RSp" secondAttribute="trailing" id="GA0-gq-Mfs"/>
+                            <constraint firstItem="S57-oZ-RSp" firstAttribute="top" secondItem="dye-eQ-ts0" secondAttribute="top" id="eKL-YL-sDz"/>
+                            <constraint firstItem="S57-oZ-RSp" firstAttribute="leading" secondItem="dye-eQ-ts0" secondAttribute="leading" id="fLf-Pa-519"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dye-eQ-ts0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fbq-8k-on1"/>
+                <constraint firstAttribute="trailing" secondItem="dye-eQ-ts0" secondAttribute="trailing" id="H5j-oj-Bg4"/>
+                <constraint firstItem="dye-eQ-ts0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UbN-QR-WFM"/>
+                <constraint firstAttribute="bottom" secondItem="dye-eQ-ts0" secondAttribute="bottom" id="s5T-Xr-K5d"/>
+            </constraints>
+            <size key="customSize" width="223" height="166"/>
+            <connections>
+                <outlet property="norResultImage" destination="S57-oZ-RSp" id="y8f-dX-bJ9"/>
+            </connections>
+            <point key="canvasLocation" x="28.260869565217394" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
